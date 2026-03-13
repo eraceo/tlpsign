@@ -1,7 +1,7 @@
 [package]
 name = "tlpsign"
 version = "1.0.0"
-edition = "2021"
+edition = "2024"
 description = "A cryptographic protocol for time-locked signature verification with an optional revocation mechanism, requiring no trusted third party."
 license = "MIT"
 repository = "https://github.com/eraceo/tlpsign"
