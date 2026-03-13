@@ -1,0 +1,41 @@
+[package]
+name = "tlpsign"
+version = "1.0.0"
+edition = "2021"
+description = "A cryptographic protocol for time-locked signature verification with an optional revocation mechanism, requiring no trusted third party."
+license = "MIT"
+repository = "https://github.com/eraceo/tlpsign"
+readme = "README.md"
+keywords = ["cryptography", "signature", "time-lock", "security"]
+categories = ["cryptography"]
+
+[dependencies]
+# Cryptography & Hashing
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+sha3 = "0.10"
+aes-gcm = "0.10"
+
+# Math & Big Integers
+num-bigint = { version = "0.4", features = ["rand"] }
+num-traits = "0.2"
+
+# Memory Safety for Cryptographic Secrets
+zeroize = { version = "1", features = ["derive"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Random Number Generation
+rand = "0.8"
+rand_core = "0.6"
+
+# Command Line Interface
+clap = { version = "4", features = ["derive"] }
+
+# Encoding & Formatting
+base64 = "0.21"
+hex = "0.4"
+
+# Date & Time Handling
+chrono = "0.4"
